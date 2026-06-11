@@ -1,0 +1,40 @@
+// Version: 4.0.0
+type List__415060402<T> = List__790383201<T>;
+type List__790383201<T> =
+  {
+    var blockIndex : Nat__490723111;
+    var blocks : [var [var ?T]];
+    var elementIndex : Nat__490723111
+  };
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type NewActor__271867064 =
+  {
+    state : {var nextId : Nat};
+    todos : List__415060402<{var completed : Bool; id : Nat; text : Text}>
+  };
+type NewActor__750297808 =
+  {
+    var nextId : Nat;
+    todos : List__415060402<{var completed : Bool; id : Nat; text : Text}>
+  };
+type OldActor__191859926 = {};
+type OldActor__800708751 =
+  {
+    state : {var nextId : Nat};
+    todos : List__415060402<{var completed : Bool; id : Nat; text : Text}>
+  };
+{
+  "20260521_000000_Init" : OldActor__191859926 -> NewActor__271867064;
+  "20260521_000001_DropState" :
+    (old : OldActor__800708751) -> NewActor__750297808
+}
+actor  {
+  stable var nextId : Nat;
+  stable todos :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?{var completed : Bool; id : Nat; text : Text}]];
+      var elementIndex : Nat__490723111
+    }
+};

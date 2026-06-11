@@ -1,0 +1,10 @@
+service : {
+  addTodo: ("text": text) -> (nat);
+  deleteTodo: (id: nat) -> ();
+  getTodos: () -> (vec record {
+                         completed: bool;
+                         id: nat;
+                         "text": text;
+                       }) query;
+  toggleTodo: (id: nat) -> ();
+}

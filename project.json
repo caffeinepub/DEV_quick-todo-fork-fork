@@ -1,0 +1,16 @@
+{
+  "overview": "A minimal todo app for testing deployment with add, complete, and delete functionality.",
+  "features": [
+    "Add new todos",
+    "Mark todos complete or incomplete",
+    "Delete todos",
+    "Simple single-page layout"
+  ],
+  "category": "productivity",
+  "tags": [
+    "todo",
+    "minimal",
+    "productivity"
+  ],
+  "last_updated": "2026-05-21T11:47:14.041Z"
+}
